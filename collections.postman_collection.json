@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "1cd7c8fe-f319-4262-951a-9d40988631e2",
+		"name": "My collections",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Localhost Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/employees",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Localhost Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 6,\r\n        \"name\": \"Rishi\",\r\n        \"salary\": \"3000\",\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/employees/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employees",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Localhost put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 100,\r\n        \"name\": \"Deepthi\",\r\n        \"salary\": \"100000\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/employees/update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employees",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Localhost Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/employees/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employees",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
